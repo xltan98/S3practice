@@ -1,0 +1,31 @@
+<h1>Post of{{id}}</h1>
+<table>
+<tr>
+    <td>
+    <img src= "https://xinlitan98.sgp1.digitaloceanspaces.com/test/{{id}}" width="500px">
+    </td>
+</tr>
+<tr>
+    <td>PostId:{{id}}</td> 
+</tr>
+<tr>
+    <td>Name:{{payload?.name}}</td>
+</tr>
+<tr>
+    <td>Date:{{payload?.date}}</td>
+</tr>
+<tr>
+    <td>Email:{{payload?.email}}</td>
+</tr>
+<tr>
+    <td>Phone:{{payload?.phone}}</td>
+</tr>
+<tr>
+    <td>Title:{{payload?.title}}</td>
+</tr>
+<tr>
+    <td>Description:{{payload?.description}}</td>
+</tr>
+<button (click)="onSubmit()">confirm</button>
+<button [routerLink]="''">cancel</button>
+</table>

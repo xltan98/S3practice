@@ -1,0 +1,31 @@
+<h1>SecondHand Upload</h1>
+
+<form [formGroup]="form" (ngSubmit)="processForm()">
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" formControlName="name"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="text" formControlName="email"></td>
+        </tr>
+        <tr>
+            <td>Phone:</td>
+            <td><input type="text" formControlName="phone"></td>
+        </tr>
+        <tr>
+            <td>Title:</td>
+            <td><input type="text" formControlName="title"></td>
+        </tr>
+        <tr>
+            <td>Description:</td>
+            <td><textarea formControlName="description"></textarea></td>
+        </tr>
+        <tr>
+            <input type="file" #toUpload>
+        </tr>
+        <button type="submit">submit</button>
+        <button (click)="clear()">Clear </button>
+    </table>
+</form>
